@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; vertical-align: top; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: 0; }
+body { 
+    font-family: 'Noto Sans KR', 돋움, sans-serif; 
+    font-size: 12px; 
+    /* background-color: pink; */
+}
+
+/* header start */
+.header_100{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: lightsalmon;
+}
+.header{
+    width: 1440px;
+    height: 65px;
+    position: relative;
+    margin: 0 auto;
+    background-color: yellow;
+}
+/* 
+--자식개체가 높이값을 가져야함!
+ */
+
+.gnb{
+    position: absolute;
+    top: 21px;
+    left: 0;
+} 
+.gnb ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gnb ul li a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    padding: 0 10px;
+}
+.gnb ul li a:hover {
+    color: blue;
+}
+
+/* .logo{
+    width: 100%;
+    text-align: center;
+    padding: 23px 0;
+} --> 편법, 늘 쓰일 순 없음*/
+
+.logo{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -63px;
+}
+/* 
+    절대위치값을 사용하여 유동적인 사이즈 안에서 가운데 정렬을 하고 싶다면
+    % 단위를 사용할 수 있다.
+
+    top값과 left값을 50%로 맞추고
+    정렬할 개체의 높이의 절반을 margin=top (-) 속성값으로 사용한다.
+    정렬할 개체의 너비의 절반을 margin-left(-) 속성값으로 사용한다.
+*/
+
+.right_gnb{
+    position: absolute;
+    top: 21px;
+    right: 0;
+} 
+.right_gnb ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.right_gnb ul li a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    padding: 0 10px;
+}
+.right_gnb ul li a:hover {
+    color: blue;
+}
+
+/* header end */
+
+/* path start */
+.path{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: plum;
+}
+.path ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.path ul li {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.path ul li a {
+    display: block;
+    color: #333;
+}
+.path ul li a:hover {
+    color: #666;
+}
+
+/* path end */
+
+/* main start */
+.main_img_100{
+    width: 100%;
+    background-color: skyblue;
+}
+.main_img{
+    width: 1440px;
+    height: 640px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/main_image.jpg) no-repeat 50% 0;
+}
+.main_img_text{
+    position: absolute;
+    top: 150px;
+    left: 110px;
+    background-color: pink;
+}
+.main_img_title{
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: -4px;
+}
+.main_img_article{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: -2px;
+    margin-top: 10px;
+}
+.main_img_btn{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_img_btn li:first-child {
+    margin-right: 10px;
+}
+.main_img_btn li a {
+    display: block;
+    padding: 18px 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
+.main_img_btn li a:hover{
+    color: #fff;
+    background-color: #151515;
+}
+
+/* main end */
+
+/* contents start */
+.contents{
+    width: 100%;
+}
+
+.choose_phone{
+    width: 1440px;
+    margin: 0 auto;
+}
+.choose_phone_title_box{
+    width: 100%;
+    text-align: center;
+    padding: 120px 0;
+}
+.choose_phone_title{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+.choose_phone_title_box a {
+    font-size: 14px;
+    color: #666;
+}
+
+.latest_phone{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sp{
+    width: 330px;
+    height: 595px;
+    margin-right: 40px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+.sp:last-child{
+    margin-right: 0;
+}
+.sp img{
+    width: 220px;
+    margin-top: 65px;
+}
+.sp img:first-child{
+    height: 220px;
+}
+.sp_title{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.sp_article{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.sp a {
+    display: block;
+    width: 141px;
+    height: 51px;
+    line-height: 51px;
+    margin: 65px auto 0 auto;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+.sp a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.detail_phone{
+    width: 1440px;
+    margin: 0 auto;
+}
+.s9, .note8, .j2, .on7, .a8{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.s9, .j2, .a8{
+    flex-direction: row-reverse;
+}
+.detail_phone_text_wrap{
+    width: 620px;
+    padding: 100px 0 0 100px;
+    background-color: lightgoldenrodyellow;
+}
+.detail_phone_title{
+    font-size: 52px;
+    font-weight: 400;
+    letter-spacing: -3px;
+}
+.detail_phone_sub_title{
+    font-size: 16px;
+    font-weight: 400;
+   margin-top: 10px;
+}
+.detail_phone_article{
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 10px;
+}
+.detail_phone_text_wrap a {
+    display: block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000;
+}
+.detail_phone_text_wrap a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/* contents end */
+
+/* footer start */
+.footer{
+    width: 100%;
+    
+}
+
+.footer_top{
+    width: 100%;
+    border-top: 1px solid #999;
+    background-color: #f7f7f7;
+}
+.footer_top_1200{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgreen;
+}
+.footer_top_title{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sitemap{
+    width: 600px;
+    background-color: rgb(231, 190, 231);
+}
+.sitemap_list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sitemap_list ul {
+    width: 300px;
+}
+.sitemap_list ul li {
+    margin-bottom: 10px;
+}
+.sitemap_list ul li:last-child {
+    margin-bottom: 0;
+}
+.sitemap_list ul li a {
+    color: #666;
+    font-size: 13px;
+}
+
+.customer{
+    width: 300px;
+    background-color: lightyellow;
+}
+.customer ul li {
+    margin-bottom: 10px;
+}
+.customer ul li:last-child {
+    margin-bottom: 0;
+}
+.customer ul li a {
+    color: #666;
+    font-size: 13px;
+}
+
+.sns{
+    width: 300px;
+    background-color: lightgray;
+}
+.sns ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.sns ul:last-child {
+    margin-bottom: 0;
+}
+.sns ul li {
+    margin-right: 15px;
+}
+.sns ul li:last-child{
+    margin-right: 0;
+}
+
+.copyright{
+    width: 100%;
+    font-size: 8px;
+    color: #999;
+    padding-top: 50px;
+    background-color: #e9e9e9;
+}
+
+.footer_btm{
+    width: 100%;
+    background-color: #363636;
+}
+.footer_btm_1200{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+    background-color: rgb(253, 224, 229);
+}
+.footer_nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_nav li {
+    padding: 0 7px;
+}
+.footer_nav li a {
+    color: #fff;
+    font-weight: 400;
+}
+
+.lang{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    color: #fff;
+}
+
+.address{
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* footer end */

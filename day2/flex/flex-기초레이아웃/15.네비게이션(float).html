@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        li {list-style: none;}
+
+        .nav { width: 500px;}
+        .nav ul {
+            /* display: flex;
+            flex-wrap: wrap; */
+            overflow: hidden;
+        }
+        /* flex와 다르게 float은 자식개체에 속성을 '직 접' 입력 */
+        /* 자식개체에 float를 넣는 경우 부모개체에>> overflow: hidden << 을 무조건 넣는다! */
+        .nav ul li {
+            float: left;
+            width: 98px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid #000;
+        }
+        .nav ul li a {
+            color: red;
+            background-color: lightpink;
+            display: block;
+            text-decoration: none;
+        }
+        .nav ul li a:hover {
+            color: #fff;
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">PHP</a></li>
+        </ul>
+    </div>
+</body>
+</html>

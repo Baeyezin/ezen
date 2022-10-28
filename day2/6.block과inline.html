@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block과 inline</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 800px;
+            text-align: center;
+            background-color: orange;
+        }
+        p{
+            text-align: center;
+            background-color: pink;
+        }
+        span{
+            /* text-align: center; */
+            background-color: lime;
+            /* width: 800px; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+         이것은 block tag<br>
+         기본 width값은 100%
+    </div>
+    <p>
+        <span>
+            이것은 inline tag<br>
+            기본 width값은 자기가 가진 콘텐츠 크기 만큼!
+        </span>
+    </p>
+    
+</body>
+</html>

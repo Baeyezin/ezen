@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습2</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .wrap{
+            width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box1{
+            width: 400px;
+            height: 700px;
+            background-color: yellow;
+        }
+        .box2{
+            width: 1000px;
+            height: 350px;
+            background-color: pink;
+        }
+        .box3{
+            width: 1000px;
+            height: 350px;
+            background-color: skyblue;
+        }
+
+        @media screen and (max-width:1440px) {
+            .wrap{
+                width: 100%;
+            }
+            .box1{
+                width: 20%;
+            }
+            .box{
+                width: 80%;
+            }
+            
+        }
+        @media screen and (max-width:800px) {
+      
+            .box1, .box{
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box">
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+</body>
+</html>

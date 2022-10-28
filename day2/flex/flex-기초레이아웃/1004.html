@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        a{text-decoration: none;}
+        body{
+            font-size: 12px;
+        }
+
+        .wrap{
+            width: 960px;
+            margin: 0 auto; 
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            position: relative;
+            border-bottom: 5px solid lightslategray;
+            margin-bottom: 10px;
+            background-color: lightgray;
+        }
+        .logo{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        .t_nav{
+            position: absolute;
+            top: 0;
+            right: 0;
+            /* border: 1px dotted red; */
+        }
+        .t_nav ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .t_nav ul li {
+            text-align: center;
+            border-right: 1px solid red;
+        }
+        .t_nav ul li a {
+            display: block;
+            color: black;
+            padding: 0 10px;
+        }
+        .t_nav ul li a:hover {
+            color: aliceblue;
+            background-color: black;
+        }
+        .t_nav ul li:last-child{
+            border-right: 0;
+        }
+
+        .b_nav{
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+            /* border: 1px dotted red; */
+        }
+        .b_nav ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .b_nav ul li {
+            text-align: center;
+            border-right: 1px solid red;
+        }
+        .b_nav ul li a {
+            display: block;
+            color: black;
+            padding: 0 10px;
+        }
+        .b_nav ul li a:hover {
+            color: aliceblue;
+            background-color: black;
+        }
+        .b_nav ul li:last-child{
+            border-right: 0;
+        }
+        .main_img{
+            width: 958px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 1px solid silver;
+            background-color: lightgrey;
+        }
+
+        .contents{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .contents1{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contents1_box{
+            width: 238px;
+            height: 238px;
+            line-height: 238px;
+            text-align: center;
+            border: 1px solid plum;
+            background-color: pink;
+        }
+        .contents2{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contents2_box{
+            width: 238px;
+            height: 238px;
+            line-height: 238px;
+            text-align: center;
+            border: 1px solid green;
+            background-color: yellowgreen;
+        }
+        .contents2 .contents2_box:first-child{
+            width: 478px;
+        }
+        .footer{
+            text-align: center;
+            padding: 10px 0;
+            border: 1px solid lightcoral;
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    
+        <div class="header">
+            <div class="logo">
+                <h1>Rint Development</h1>
+                <h2>HTML5 + CSS3 BASIC</h2>
+            </div>
+            <div class="t_nav">
+                <ul>
+                    <li><a href="#">Web</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">Simulation</a></li>
+                    <li><a href="#">Data</a></li>
+                </ul>
+            </div>
+            <div class="b_nav">
+                <ul>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                    <li><a href="#">JQUERY</a></li>
+                    <li><a href="#">NODE.JS</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="main_img">MAIN IMAGE</div>
+
+        <div class="contents">
+            <div class="contents1">
+                <div class="contents1_box">box1</div>
+                <div class="contents1_box">box2</div>
+                <div class="contents1_box">box3</div>
+                <div class="contents1_box">box4</div>
+            </div>
+            <div class="contents2">
+                <div class="contents1">
+                    <div class="contents2_box">box1</div>
+                    <div class="contents2_box">box2</div>
+                    <div class="contents2_box">box3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="f_title">HTML5 + CSS3 BASIC</p>
+            <p class="f_article">WEBSITE LAYOUT BASIC</p>
+        </div>
+    </div>
+</body>
+</html>

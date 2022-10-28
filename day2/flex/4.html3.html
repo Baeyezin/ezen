@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box_wrap{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-color: lightgray;
+        }
+        /* 
+            [flex-direction 속성]
+            flex-direction 속성은 flex 컨테이너 안에서 flex 요소가 배치 될 방향을 설정
+
+            1.row(default) : 기본값. flex 요소는 왼->오, 위->아래 배치
+            2.rowreverse : flex요소가 row와 반대로 오->왼 배치
+            3. column : flex요소들이 위->아래 배치(세로배치)
+            4. column-reverse : flex 요소들이 아래->위 배치
+        */
+        .box1{
+            width: 400px;
+            height: 200px;
+            background-color: lightblue;
+        }
+        .box2{
+            width: 400px;
+            height: 200px;
+            background-color: lightpink;
+        }
+        .box3{
+            width: 400px;
+            height: 200px;
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_wrap">
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0; }
+        li {list-style: none;}
+
+        .nav {width: 500px;}
+        .nav ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nav ul li {
+            width: 98px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid #000;
+        }
+        /* box속성, 정렬속성 */
+        .nav ul li a{
+            color: #000;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+        }
+        .nav ul li a:hover {
+            color: #fff;
+            background-color: #000;
+        }
+        /* 서식속성 */
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">PHP</a></li>
+             <!-- # == 임시링크, 어디로도 이동되지 않음 -->
+        </ul>
+    </div>
+</body>
+</html>

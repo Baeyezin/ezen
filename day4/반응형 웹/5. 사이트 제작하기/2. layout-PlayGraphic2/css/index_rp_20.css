@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; vertical-align: top; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: 0; max-width: 100%; } 
+body { font-family: Tahoma, Arial, sans-serif; background: #333; min-width: 320px; }
+
+.wrap { width: 1200px; margin: 0 auto; }
+
+header { width: 100%; height: 600px; background: url('../images/main_img3.jpg') no-repeat 50% 50%;
+			display: flex; flex-wrap: wrap; align-content: flex-start; }
+
+nav { width: 1000px; background: #000; }
+nav ul { display: flex; flex-wrap: wrap; }
+nav ul li { width: 100px; height: 30px; line-height: 30px; text-align: center; }
+nav ul li:nth-child(4) { margin-right: 400px; }
+nav ul li a { display: block; font-size: 14px; color: #FFF; }
+nav ul li a:hover { color: #000; background: #FFF; }
+
+.right_box { width: 200px; height: 30px; background: rgba(0, 0, 0, 0.5); }
+
+.title { width: 100%; height: 120px; line-height: 120px; text-align: center; font-size: 80px; 
+		font-weight: bold; color: #FFF; letter-spacing: -10px; background: rgba(0, 0, 0, 0.5); }
+
+.title span { color: gold; }
+
+.contents { width: 100%; margin-top: 5px; }
+
+.title_box { width: 100%; padding: 100px 0; text-align: center; 
+				border-top: 20px solid #525252; background: #ECECEC; }
+
+.c_title { font-family: 'Trebuchet MS', sans-serif; font-size: 36px; font-weight: bold; color: #333; }
+.c_article { font-size: 12px; color: #999; }
+
+.middle_bar { text-align: center; }
+
+.pics_wrap { width: 100%; padding: 40px 0; text-align: center; background: lime;
+					display: flex; flex-wrap: wrap; align-items: flex-start; }
+
+.pics { width: 350px; margin-left: 25px; background: red; }
+.pics:first-child { margin-left: 50px; }
+
+.pics img { margin-bottom: 30px; }
+
+.pics_title { font-family: 'Trebuchet MS', sans-serif; margin-bottom: 30px; font-size: 24px; color: gold; }
+.pics_article { width: 80%; margin: 0 auto; font-size: 12px; color: #FFF; background: #000; }
+
+footer { width: 100%; height: 80px; line-height: 80px; text-align: center; font-size: 12px;
+			color: #FFF; background: #000; }
+
+
+
+			
+@media screen and (max-width:1280px) {
+	.wrap { width: 100%; }
+	
+	header { background-size: cover; }
+	
+	nav { width: 85%; }
+	nav ul li { width: 10%; }
+	nav ul li:nth-child(4) { margin-right: 40%; }
+	
+	.right_box { width: 15%; }
+	
+	.pics { width: 30%; margin-left: 1.5%; }
+	.pics:first-child { margin-left: 3.5%; }
+	
+	.pics img { width: 100%; }	
+}
+
+@media screen and (max-width:1024px) {
+	header { height: 450px; }
+	
+	nav { width: 100%; }
+	
+	.right_box { display: none; }
+	
+	.title { font-size: 70px; letter-spacing: -7px; }
+	
+	.title_box { padding: 80px 0; }
+	.c_title { font-size: 32px; }
+	.pics_title { font-size: 22px; }
+}
+
+@media screen and (max-width:800px) {
+	header { height: 400px; }
+	
+	nav ul li { width: 16.66%; }
+	nav ul li:last-child { width: 16.7%; }
+	nav ul li:nth-child(4) { margin-right: 0; }
+	
+	.title { font-size: 45px; letter-spacing: -5px; height: 80px; line-height: 80px; }
+	
+	.title_box { padding: 65px 0; }
+	.c_title { font-size: 28px; }
+	.c_article { width: 90%; margin: 0 auto; }
+	
+	.pics_title { font-size: 20px; }
+}
+
+@media screen and (max-width:600px) {
+	.pics { width: 100%; text-align: left; border-bottom: 1px solid #666; margin-left: 0; 
+			margin-bottom: 20px; display: flex; flex-wrap: wrap; align-items: flex-start; }
+	
+	.pics:first-child { margin-left: 0; }
+	.pics:last-child { margin-bottom: 0; }
+	
+	.pics img { width: 38%; margin: 0 2%; }
+	
+	.pics_text_box { width: 58%; background: #666; }
+	
+	.pics_title { margin-bottom: 0; }
+	.pics_article { width: 90%; margin: 0; }
+}
+
+@media screen and (max-width:480px) {
+	header { flex-direction: column; }
+	
+	nav { background: #333; order: 2; }
+	nav ul li { width: 100%; border-bottom: 1px solid #666; }
+	nav ul li:last-child { width: 100%; }
+	nav ul li a { text-align: left; text-indent: 20px; }
+	
+	.title { font-size: 33px; letter-spacing: -3px; border-bottom: 2px solid #FFF;
+			background: #333; order: 1; }
+	
+	.pics { border-bottom: 1px solid #666; text-align: center; justify-content:center; margin-bottom:50px }
+	.pics:last-child { border-bottom: 0; }
+	.pics img { width: 90%; margin: 0; }
+	
+	.pics_text_box { width: 100%; }
+	.pics_title { width: 90%; margin: 20px auto; }
+	.pics_article { margin: 0 auto; }		
+		
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+

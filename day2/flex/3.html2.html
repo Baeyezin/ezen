@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 box</title>
+    <style>
+        *{margin: 0; padding:0; }
+        .box_wrap{
+            width: 800px;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            background-color: lightgray;
+        }
+
+        /* 
+            [flex-wrap 속성의 속성값]
+            1. nowrap(default) => 사이즈가 오버되어도 다음줄로 넘어가지 않음. 대시 flex 요소의 너비를 줄여서 한 줄에 모두 배치시킵니다.
+            2. wrap : flex요소의 가로사이즈 그대로 계산. 여유 공간이 없으면 다음줄로 배치
+            3. wrap-reverse : flex 요소가 여유 공간이 없다면 다음줄로 넘어가서 배치됨(상하반전)
+        */
+
+
+        .box_left{
+            width: 400px;
+            height: 100px;
+            background-color: lightblue;
+        }
+        .box_right{
+            width: 400px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+        .box_bottom{
+            width: 800px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_wrap">
+        <div class="box_left"></div>
+        <div class="box_right"></div>
+        <div class="box_bottom"></div>
+    </div>
+</body>
+</html>

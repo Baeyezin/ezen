@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변그리드2</title>
+    <style>
+        *{margin: 0; padding:0;}
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: navy;
+        }
+        .contents{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 400px;
+        }
+        .box:nth-child(1){
+            width: 100%;
+            background-color: lightgreen;
+        }
+        .box:nth-child(2){
+            width: 50%;
+            border-right: 5px solid red;
+            box-sizing: border-box;
+            background-color: pink;
+        }
+        /* 
+            box-sizing : content-box (기본값-defalt)
+            box-sizing : border-box
+            border가 포함된 박스사이즈가 됨! (width값)
+            border/padding ==포함됨
+            margin == 포함 안됨
+
+            ★ 중요
+        */
+        .box:nth-child(3){
+            width: 50%;
+            background-color: skyblue;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="contents">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

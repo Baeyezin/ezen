@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃복습</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        li {list-style: none;}
+        a {text-decoration: none; color: #333;}
+
+        header{
+            width: 960px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #999;
+            background: lightgray;
+            
+        }
+        .t_nav{
+            width: 100%;
+            height: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            border-bottom: 1px solid #fff;
+        }
+        .t_nav ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .t_nav ul li {
+            display: block;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border-right: 1px solid #fff;
+        }
+        .t_nav ul li:last-child{
+            border-right: none;
+        }
+        .t_nav ul li a {
+            display: block;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .t_nav ul li a:hover {
+            color: #fff;
+            background-color: #000;
+        }
+        .m_nav{
+            width: 960px;
+            height: 63px;
+            padding: 15px 0;
+            text-align: center;
+            border-top: 1px solid #E9E9E9;
+            border-bottom: 1px solid #E9E9E9;
+        }
+        .h_title{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .h_article{
+            font-size: 16px;
+        }
+        .b_nav{
+            width: 960px;
+            height: 35px;
+        }
+        .b_nav ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .b_nav ul li {
+            display: block;
+            width: 192px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+        }
+        .b_nav ul li:last-child{
+            width: 194px;
+        }
+        .b_nav ul li a {
+            display: block;
+            
+        }
+        .b_nav ul li a:hover {
+            color: #fff;
+            background-color: #000;
+        }
+        
+        .main_img{
+            width: 960px;
+            height: 300px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            background-color: lightcyan;
+        }
+
+        .business{
+            width: 960px;
+            /* height: 360px; */
+            margin: 0 auto;
+            margin-bottom: 10px;
+            background-color: rgb(243, 208, 213);
+        }
+        .b_box1{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .b_box{
+            width: 229px;
+            height: 238px;
+            border: 1px solid #666;
+            margin-right: 12px;
+        }
+        .b_box:last-child{
+            /* width: 232px; */
+            margin-right: 0;
+        }
+        .b_title_box{
+            width: 960px;
+            margin: 0px auto;
+            margin-top: 15px;
+            padding: 15px 0;
+        }
+        .b_title{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .b_article{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .event{
+            width: 960px;
+            
+            margin: 0 auto;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: rgb(200, 216, 200);
+        }
+        .e_box1{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .e_box{
+            width: 472px;
+            height: 240px;
+            margin-right:12px ;
+            border: 1px solid #666;
+        }
+        .e_box:last-child {
+            margin-right: 0;
+        }
+        .e_p_box{
+            width: 100%;
+            margin: 0 auto;
+            padding: 15px 0;
+        }
+        .e_title{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .e_article{
+            font-size: 12px;
+            text-align: center;
+        }
+        footer{
+            width: 958px;
+            height: 30px;
+            margin: 0 auto;
+            padding: 20px 0;
+            border: 1px solid #666;
+            font-size: 12px;
+            text-align: center;
+            background-color: lightsteelblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="t_nav">
+            <ul>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Game</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">Data</a></li>
+            </ul>
+        </div>
+
+        <div class="m_nav">
+            <p class="h_title">Rint Development</p>
+            <p class="h_sub_title">HTML5 + CSS3 Basic</p>
+        </div>
+
+        <div class="b_nav">
+            <ul>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">JQUERY</a></li>
+                <li><a href="#">NODE.JS</a></li>
+            </ul>
+        </div>
+    </header><!--header-->
+    <div class="main_img">
+
+    </div><!--main_img-->
+    <div class="business">
+        <div class="b_title_box">
+            <p class="b_title">Business</p>
+            <p class="b_article">sub article put here</p>
+        </div>
+        <div class="b_box1">       
+            <div class="b_box">box1</div>
+            <div class="b_box">box2</div>
+            <div class="b_box">box3</div>
+            <div class="b_box">box4</div>
+        </div> 
+    </div><!--business-->
+    
+    <div class="event">
+        <div class="e_p_box">
+            <p class="e_title">Event</p>
+            <p class="e_article">sub article put here</p>
+        </div>
+        <div class="e_box1"> 
+            <div class="e_box">box1</div>
+            <div class="e_box">box2</div>
+        </div>   
+    </div><!--event-->
+
+    <footer>
+        <p class="f_title">HTML5 + CSS3 Basic</p>
+        <p class="f_article">Website Layout Basic</p>
+    </footer>
+</body>
+</html>

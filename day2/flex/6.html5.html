@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box_wrap{
+            width: 800px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            align-items: stretch;
+            background-color: lightgray;
+        }
+        .box1{
+            width: 200px;
+            /* height: 200px; */
+            background-color: lightblue;
+        }
+        .box2{
+            width: 200px;
+            /* height: 200px; */
+            background-color: lightpink;
+        }
+        .box3{
+            width: 200px;
+            /* height: 200px; */
+            background-color: lightsalmon;
+        }
+
+        /* 
+            [align-items 속성]
+            align-items는 flex 요소의 수직 방향 정렬 방식 설정
+            0. stretch : 기본값(default)으로 flex 요소의 높이가 부모 컨테이너 높이에 맞게 설정됨. (단 높이값이 auto인 경우에만 가능)
+            1. flex-start : flex요소의 컨테이너의 위부터 배치
+            2. flex-end : flex요소가 컨테이너의 아래부터 배치
+            3. center : 가운데정렬
+            4. baseline : flex 요소가 컨테이너의 기준선(baseline)에 배치됩니다.
+        */
+
+    </style>
+
+</head>
+<body>
+    <div class="box_wrap">
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+    </div>
+</body>
+</html>

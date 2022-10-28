@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        li { list-style: none; }
+        
+        .nav { width: 500px; }
+        .nav ul { 
+            display: flex; 
+            flex-wrap: wrap; 
+        }
+        .nav ul li { 
+            width: 98px; 
+            height: 50px; 
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid #000; 
+        }
+
+        .nav ul li a {
+            color: #000;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+        }
+        /* a 태그의 속성 자체를 바꿈! */
+
+        .nav ul li a:hover {
+            color: #fff;
+            background-color: #000;
+
+        }
+        /* 
+            line-height == 두줄짜리(X) only 한줄
+            middle정렬 용도로 사용
+            해당 박스에 반드시 높이값이 고정으로 있어야함(%같은 가변값 안됌)
+        */
+     </style>
+  </head>
+
+  <body>
+     <div class="nav">
+        <ul>
+           <li><a href="#">HTML5</a></li>
+           <li><a href="#">CSS3</a></li>
+           <li><a href="#">JavaScript</a></li>
+           <li><a href="#">jQuery</a></li>
+           <li><a href="#">PHP</a></li>
+        </ul>
+     </div>
+     
+     
+     
+  </body>
+</html>

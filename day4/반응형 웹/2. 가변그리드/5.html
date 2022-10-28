@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변그리드5</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        a{text-decoration: none; color: #171717;}
+        body{
+            font-family: 돋움,sans-serif;
+            font-size: 14px;
+            min-width: 800px;
+        }
+
+        /* header start */
+        .header{
+            width: 100%;
+        }
+        .header_top{
+            height: fit-content;
+            background-color: navy;
+            justify-content: center;
+        }
+        .logo{
+            font-size: 36px;
+            color: #fff;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .header_btm{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #333;
+        }
+        .header_btm ul {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(69, 170, 209);
+        }
+        .header_btm ul li {
+            /* height: 30px; */
+
+        }
+        .header_btm ul li a {
+            display: block;
+            padding: 7px 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .header_btm ul li a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* contents start */
+
+        .contents{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .c_box1{
+            width: 200px;
+            height: 1000px;
+            background-color: yellow;
+        }
+        .c_box1 ul {
+            background-color: lightgoldenrodyellow;
+        }
+        .c_box1 ul li {
+            border-bottom: 1px solid navy;
+        }
+        .c_box1 ul li a {
+            display: block;
+            padding: 15px 15px;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: gray;
+        }
+
+        .c_box2{
+            /* width: 85%; */
+            padding: 30px;
+            box-sizing: border-box;
+            flex: 1;
+            background-color: lightgray;
+        }
+        .box_text{
+            padding: 30px;
+            line-height: 160%;
+        }
+        .box2_title{
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 7px;
+        }
+
+        /* footer start */
+        .footer{
+            width: 100%;
+            background-color: pink;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_top">
+            <p class="logo">Fluid</p>
+        </div>
+        <div class="header_btm">
+            <ul>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="c_box1">
+            <ul>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+            </ul>
+        </div>
+        <div class="c_box2">
+            <div class="box_text">
+                <p class="box2_title">해그리드...</p>
+                <p class="box2_article">
+                    영화 ‘해리 포터’ 시리즈에서 마법학교 호그와트의 숲지기 해그리드 역을 연기한 영국배우 로비 콜트레인(사진)이
+                    14일(현지시간) 72세로 별세했다고 AP통신이 보도했다.
+
+                    콜트레인은 2001∼2011년 개봉한 8편의 해리 포터 시리즈에서 호그와트 숲을 지키는 혼혈 거인 해그리드 역을 맡았다. 
+                    주인공 해리 포터와 친구들을 도와주는 다정한 조언자 역할로 팬들의 큰 사랑을 받았다. 해리 포터 작가 조앤 롤링은 
+                    트위터에서 “다시는 로비와 같은 사람을 만날 수 없을 것”이라며 “믿을 수 없는 재능을 지닌 완벽한 배우였다”고 애도했다.
+
+                    1950년 스코틀랜드 러더글렌에서 태어난 콜트레인은 본명이 앤서니 로버트 맥밀런이었지만 자신이 좋아하던
+                    재즈 색소포니스트 존 콜트레인의 성을 따 이름을 바꿨다. 40년 넘게 스크린과 TV를 넘나들며 배우로 활약했다.
+
+                </p>
+            </div>
+            <div class="box_text">
+                <p class="box2_title">해그리드...</p>
+                <p class="box2_article">
+                    영화 ‘해리 포터’ 시리즈에서 마법학교 호그와트의 숲지기 해그리드 역을 연기한 영국배우 로비 콜트레인(사진)이
+                    14일(현지시간) 72세로 별세했다고 AP통신이 보도했다.
+
+                    콜트레인은 2001∼2011년 개봉한 8편의 해리 포터 시리즈에서 호그와트 숲을 지키는 혼혈 거인 해그리드 역을 맡았다. 
+                    주인공 해리 포터와 친구들을 도와주는 다정한 조언자 역할로 팬들의 큰 사랑을 받았다. 해리 포터 작가 조앤 롤링은 
+                    트위터에서 “다시는 로비와 같은 사람을 만날 수 없을 것”이라며 “믿을 수 없는 재능을 지닌 완벽한 배우였다”고 애도했다.
+
+                    1950년 스코틀랜드 러더글렌에서 태어난 콜트레인은 본명이 앤서니 로버트 맥밀런이었지만 자신이 좋아하던
+                    재즈 색소포니스트 존 콜트레인의 성을 따 이름을 바꿨다. 40년 넘게 스크린과 TV를 넘나들며 배우로 활약했다.
+
+                </p>
+            </div>
+            <div class="box_text">
+                <p class="box2_title">해그리드...</p>
+                <p class="box2_article">
+                    영화 ‘해리 포터’ 시리즈에서 마법학교 호그와트의 숲지기 해그리드 역을 연기한 영국배우 로비 콜트레인(사진)이
+                    14일(현지시간) 72세로 별세했다고 AP통신이 보도했다.
+
+                    콜트레인은 2001∼2011년 개봉한 8편의 해리 포터 시리즈에서 호그와트 숲을 지키는 혼혈 거인 해그리드 역을 맡았다. 
+                    주인공 해리 포터와 친구들을 도와주는 다정한 조언자 역할로 팬들의 큰 사랑을 받았다. 해리 포터 작가 조앤 롤링은 
+                    트위터에서 “다시는 로비와 같은 사람을 만날 수 없을 것”이라며 “믿을 수 없는 재능을 지닌 완벽한 배우였다”고 애도했다.
+
+                    1950년 스코틀랜드 러더글렌에서 태어난 콜트레인은 본명이 앤서니 로버트 맥밀런이었지만 자신이 좋아하던
+                    재즈 색소포니스트 존 콜트레인의 성을 따 이름을 바꿨다. 40년 넘게 스크린과 TV를 넘나들며 배우로 활약했다.
+
+                </p>
+            </div>
+            <div class="box_text">
+                <p class="box2_title">해그리드...</p>
+                <p class="box2_article">
+                    영화 ‘해리 포터’ 시리즈에서 마법학교 호그와트의 숲지기 해그리드 역을 연기한 영국배우 로비 콜트레인(사진)이<br>
+                    14일(현지시간) 72세로 별세했다고 AP통신이 보도했다.<br>
+
+                    콜트레인은 2001∼2011년 개봉한 8편의 해리 포터 시리즈에서 호그와트 숲을 지키는 혼혈 거인 해그리드 역을 맡았다. <br>
+                    주인공 해리 포터와 친구들을 도와주는 다정한 조언자 역할로 팬들의 큰 사랑을 받았다. 해리 포터 작가 조앤 롤링은 <br>
+                    트위터에서 “다시는 로비와 같은 사람을 만날 수 없을 것”이라며 “믿을 수 없는 재능을 지닌 완벽한 배우였다”고 애도했다.<br>
+
+                    1950년 스코틀랜드 러더글렌에서 태어난 콜트레인은 본명이 앤서니 로버트 맥밀런이었지만 자신이 좋아하던<br>
+                    재즈 색소포니스트 존 콜트레인의 성을 따 이름을 바꿨다. 40년 넘게 스크린과 TV를 넘나들며 배우로 활약했다.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        푸터다푸터다푸터다푸터
+    </div>
+</body>
+</html>

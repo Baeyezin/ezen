@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Cambria, Georgia, serif;
+            color: #2c2c2c;
+            background-color: #dcdbd9;
+        }
+        h1{
+            font-size: 1.5em; /*24px*/
+            font-style: italic;
+            font-weight: normal;
+        }
+        h1 a {
+            font-size: 0.4583em; /*11px*/
+            color: #747474;
+            font-family: Calibri, Optima, Arial;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        /* 
+            원한다면 font-size를 px(고정값) 단위로 정한다고 해도 아무 문제가 없다.
+            그러나 상대적인 사이즈를 위해 비례적인 관점을 대입하여 px기반의 font-size값을
+            상대적 수치로 나타낼 수 있다.
+            따라서 px대신에 em을 사용한다.
+        */
+
+        /*  target / context = result */
+
+        /* 
+            body 태그의 기본 font-size:100% 값이 16px로 가정할 때
+            h1의 target 폰트 크기(24px)를 context(16px)에 비례하도록 나타낸다.
+
+            24/16 = 1.5
+            target / context = result
+
+            따라서 변환된 단위의 폰트 크기는 1.5em이 된다.
+            (CSS 수치 우측에 주석으로 계싼법을 남겨두면 나중에 더 쉽게 수정할 수 있다.)
+            
+            Read More 첵스트의 경우 h1에서 지정한 24px 을 context로 사용한다. (부모)
+            따라서 target을 11px로 잡고 body 지정된 16px로 나누는 것이 아니라
+            부모 h1에 적용된 24px을 context로 지정하여 계산해야 제대로 된 크기가 된다.
+
+            11/24 = 0.458333333333
+            여기서 반올림 하지 말고 그대로 두ㅠ는 편이 좋다.
+            왜냐하면 이 수치는 우리가 원하는 이상적인 폰트 크기를 완벽하게 비례적 수치로 나타낸 것이다.
+            게다가 브라우저는 이 값을 px로 표현하기 위해 내부적으로 변환하고 남는 소수점을 완벽하게 반올림하여 처리하기 때문에
+            우리가 더 많은 정보를 줄 수록 더 나은 결과를 얻게 된다.
+        */
+    </style>
+</head>
+<body>
+    <h1>Achieve sentience with Skynet!
+        <a href="#">Read More &raquo;</a>
+    </h1>
+</body>
+</html>

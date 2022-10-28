@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 400px;
+            height: 200px;
+            padding: 30px;
+            margin: 10px 0 50px 30px;
+            background-color: orange;
+        }
+        .box2{
+            width: 400px;
+            height: 200px;
+            padding: 10px 0 0 80px;
+            background-color: lime;
+        }
+        .box3{
+            width: 257px;
+            height: 167px;
+            margin: 16px 20px;
+            padding: 13px 22px 0 18px;
+            background-color: pink;
+        }
+        /* 
+        [박스의 가로 사이즈 계산]
+        width + margin-left + margin-right + padding-left + padding-right + border-left + border-right
+        */
+    </style>
+</head>
+<body>
+    <div class="box1">이것은 box1</div>
+    <div class="box2">이것은 box2</div>
+    <div class="box3">이것은 box3</div>
+    
+</body>
+</html>

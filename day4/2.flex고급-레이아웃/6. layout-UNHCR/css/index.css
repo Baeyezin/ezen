@@ -1,0 +1,506 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; vertical-align: top; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: 0; }
+body { 
+    font-family: 'Noto Sans KR', 돋움, sans-serif; 
+    font-size: 12px; 
+    background-color: rgb(248, 221, 226);
+}
+
+/* header start */
+.header{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: #999;
+}
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+.gnb{
+    background-color: #999;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -410px;
+}
+.gnb ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gnb ul li {
+    height: 80px;
+    line-height: 80px;
+}
+.gnb ul li a {
+    display: block;
+    padding: 0 35px;
+    color: #fff;
+}
+.gnb ul li a:hover{
+    color: #000;
+    background-color: yellow;
+}
+.mobile_btn{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+/* header end */
+
+/* main start */
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: url(../images/main_img.jpg ) no-repeat 0 50%;
+}
+.main_box{
+    width: 750px;
+    height: 783px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    padding-left: 30px;
+}
+.main_text_box{
+    /* position: absolute;
+    top: 70px;
+    left: 30px; */
+   
+}
+.main_title{
+    color: red;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -5px;
+}
+.main_article{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: -2px;
+}
+.main_text_box a{
+    width: fit-content;
+    display: block;
+    color: #fff;
+    margin-top: 50px;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+}
+.main_text_box a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* main end */
+
+/* contents start */
+.contents{
+    width: 100%;
+}
+.aid{
+    width: 1400px;
+    margin: 0 auto;
+}
+.aid_title{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 80px;
+    color: #000;
+}
+.aid_sub_title{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 20px;
+    color: #666;
+}
+
+.aid_text_wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.aid_text_box{
+    width: 695px;
+    margin-left: 10px;
+}
+.aid_text_box:last-child{
+    margin-left: 0;
+}
+.aid_text_title{
+    font-size: 16px;
+    font-weight: 200;
+    color: #333;
+}
+.aid_text_article{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #666;
+}
+
+.story{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background: url(../images/story_bg.jpg) no-repeat 50% 0% #fff;
+}
+.story_text_box_wrap{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #000;
+}
+.story_text_box{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    margin-left: 200px;
+    justify-content: center;
+}
+.story_text{
+    width: fit-content;
+    justify-content: flex-start;
+}
+.story_title{
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: -3px;
+}
+.story_title span {
+    color: aqua;
+}
+.story_article{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.story_text a {
+    display: block;
+    color: #fff;
+    text-align: right;
+    margin-top: 80px;
+}
+
+.story_img_box {
+    width: 50%;
+    height: 765px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story_img{
+    align-items: center;
+}
+.story_img img {
+   display: flex;
+   align-items: center;
+}
+
+
+.return{
+    width: 100%;
+    margin-top: 100px;
+    background-color: rgb(226, 226, 226);
+}
+
+.return_wrap{
+    width: 1400px;
+    margin: 0 auto;
+}
+.return_title{
+    font-size: 28px;
+    font-weight: 100;
+    color: #333;
+    letter-spacing: -3px;
+}
+.return_text_wrap{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.return_text_box{
+    width: 466px;
+}
+.return_text_title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+.return_text_article{
+    font-size: 16px;
+    font-weight: 200;
+    color: #666;
+    margin-top: 30px;
+}
+.return_text_go{
+    font-size: 10px;
+    font-weight: 300;
+    color: #333;
+    margin-top: 30px;
+}
+.return_text_go a {
+    display: block;
+    color: #000;
+}
+
+.return_text_box_right{
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+.return_img_wrap{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.return_img{
+    width: 350px;
+    height: 400px;
+    background: url('../images/father.jpg') no-repeat;
+    position: relative;
+}
+.return_img_title{
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.return_img_title span {
+    border-top: 3px solid #fff;
+    padding-bottom: 3px;
+}
+
+.protect, .people {
+    width: 1400px;
+    margin: 100px auto 0;
+}
+.protect_title{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+}
+.protect_article{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    color: #333;
+    margin-top: 15px;
+}
+.protect_wrap, .people_wrap {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.protect_box{
+    width: 350px;
+    text-align: center;
+}
+.protect_img_title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 20px;
+}
+.protect_img_article{
+    font-size: 14px;
+    font-weight: 200;
+    color: #333;
+    margin-top: 20px;
+}
+
+.people_box{
+    width: 335px;
+    text-align: center;
+    margin-right: 20px;
+}
+.people_box:last-child{
+    margin-right: 0;
+}
+.people_title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #000;
+}
+.people_article{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #666;
+}
+
+
+/* contentx end */
+
+
+/* footer start */
+.footer{
+    width: 100%;
+    margin-top: 100px;
+}
+.footer_top{
+    color: #fff;
+    background-color: rgb(10, 10, 70);
+    padding-bottom: 30px;
+}
+.footer_top_wrap{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.footer_top_title {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.footer_top_box ul {
+    margin-top: 10px;
+}
+.footer_top_box ul li a {
+    color: #FFF;
+    font-weight: 100;
+}
+
+.footer_btm{
+    width: 100%;
+    padding-top: 25px;
+    background-color: gray;
+}
+.footer_btm_wrap{
+    width: 1400px;
+    margin: 0 auto;
+}
+.footer_lna{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.address{
+    color: #FFF;
+    margin-left: 30px;
+}
+/* .logo img {
+    margin-right: 30px;
+} */
+/* footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 쌤코드 start */
+
+.story1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background: url('../images/story_bg.jpg') no-repeat 50% 50%;
+}
+
+.story_inside{
+    width: 50%;
+    height: 765px;
+    /* background-color: #000; */
+}
+.story_inside:first-child{
+    height: 655px;
+    /* background-color: skyblue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: #000;
+}
+.story_inside_text_box{
+    width: 650px;
+    padding: 50px 50px 0 0;
+    background-color: #000;
+}
+
+.story_inside:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.story_inside_title { 
+    font-size: 48px; 
+    font-weight: 500; 
+    color: #FFF; 
+    letter-spacing: -5px; 
+    margin-bottom: 45px; 
+}              
+.story_inside_title span { 
+    color: aqua; 
+}
+
+.story_inside_article { 
+    font-size: 20px; 
+    color: #FFF; 
+    letter-spacing: 
+    -1px; 
+    margin-bottom: 100px; 
+}
+
+.story_inside_btn{
+    text-align: right;
+    margin-top: 100px;
+}
+.story_inside_btn a {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: -1;
+}
+
+/* 쌤코드 end */

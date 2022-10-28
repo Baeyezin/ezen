@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        .wrap{
+            width: 600px;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+        .box:first-child {
+            height: 600px;
+            background-color: orange;
+        }
+        .box:nth-child(2) {
+            background-color: lime;
+        }
+        .box:last-child {
+            background-color: pink;
+        }
+
+
+
+        .wrap2{
+            width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box2{
+            width: 300px;
+            height: 600px;
+            background-color: orange;
+            
+        }
+
+        .box3_wrap{
+            width: 300px;
+        }
+        .box3_wrap_box{
+            width: 300px;
+            height: 300px;
+        }
+        .box3_wrap_box:first-child{
+            background-color: lime;
+        }
+        .box3_wrap_box:last-child{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="wrap2">
+        <div class="box2">1</div>
+        
+        <div class="box3_wrap">
+            <div class="box3_wrap_box">2</div>
+            <div class="box3_wrap_box">3</div>
+        </div>
+    </div>
+</body>
+</html>

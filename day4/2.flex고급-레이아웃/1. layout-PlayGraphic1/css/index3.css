@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* 초기화코드 start */
+*{margin: 0; padding: 0; vertical-align: top;}
+li {list-style: none;}
+a {text-decoration: none; color: #fff;}
+img {border: 0;}
+
+/* 초기화코드 end */
+
+body{
+    font-family: Tahoma,Arial,sans-serif;
+    /* background-color: gray; */
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header start */
+.header_wrap{
+    width: 100%;
+    position: relative;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.main_img{
+    width: 1200px;
+    height: 800px;
+    background: url('images/main_img.jpg') no-repeat 50% 50%;
+}
+.nav{
+    width: 1000px;
+    background-color: #000;
+    font-size: 14px;
+}
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav ul li {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.nav ul li:nth-child(4){
+    margin-right: 400px;
+}
+.nav ul li a {
+    display: block;
+
+}
+.nav ul li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.blank{
+    width: 200px;
+    background-color: rgba(0,0,0,0.5);
+}
+.title{
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold; 
+    letter-spacing: -8px;
+    text-align: center;
+}
+.title span {
+    color: gold;
+}
+
+/* header end */
+
+
+/* contents start */
+.contents{
+    width: 100%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.contents_text{
+    width: 100%;
+    padding: 100px 0;
+    margin-top: 10px;
+    text-align: center;
+    border-top: 20px solid #333;
+    background-color: aliceblue;
+}
+.text_title{
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+}
+.text_article{
+    color: #333;
+}
+
+.middle_bar{
+    text-align: center;
+}
+
+.pics{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+.pics_box{
+    width: 350px;
+    margin-left: 25px;
+    background-color: lightyellow;
+}
+.pics_box:first-child{
+    margin-left: 50px;
+}
+.pics_title{
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.pics_article{
+    width: 80%;
+    color: #333;
+    font-size: 16px;
+    margin: 30px auto 5px auto;
+    /* background-color: #999; */
+}
+
+/* contents end */
+
+/* footer start */
+footer{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+/* footer end */

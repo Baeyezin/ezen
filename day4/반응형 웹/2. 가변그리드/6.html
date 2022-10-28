@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변그리드6</title>
+    <style>
+         *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        a{text-decoration: none; color: #171717;}
+        body{
+            font-family: 고딕,sans-serif;
+            font-size: 14px;
+            min-width: 800px;
+        }
+
+        /* header start */
+        .header{
+            width: 100%;
+            /* margin-bottom: 150px; */
+        }
+        .header_top{
+            margin: 0 auto;
+            padding: 15px 0;
+            box-sizing: border-box;
+            background-color: navy;
+        }
+        .logo{
+            text-align: center;
+            font-weight: bold;
+            font-size: 35px;
+            color: #fff;
+        }
+        .header_btm{
+            background-color: orange;
+            border-bottom: 1px solid navy;
+            box-sizing: border-box;
+        }
+        .header_btm ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .header_btm ul li {
+            width: 20%;
+            text-align: center;
+            border-right: 1px solid navy;
+            box-sizing: border-box;
+        }
+        .header_btm ul li:last-child{
+            border-right: 0;
+        }
+        .header_btm ul li a {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .header_btm ul li a:hover {
+            color: orange;
+            background-color: #333;
+        }
+
+        /* contents start */
+        .contents{
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 100px;
+            background-color: rgb(236, 226, 226);
+        }
+        .c_top{
+            width: 95%;
+            margin: 0 auto;
+            padding: 100px 0;
+            /* background-color: pink; */
+        }
+        .c_title{
+            width: 95%;
+            margin: 0 auto;
+        }
+        .c_title_1{
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .c_title_2{
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .c_top_box{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+        .box1{
+            width: 49%;
+            height: 200px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            margin-right: 2%;
+        }
+        .box1:last-child{
+            margin-right: 0;
+        }
+       
+        .c_middle{
+            width: 100%;
+            height: 400px;
+            background-color: lightslategrey;
+            color: #fff;
+            text-align: center;
+            padding: 200px 0;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+
+        .c_btm{
+            width: 95%;
+            margin: 0 auto;
+            padding: 100px 0;
+            /* background-color: yellow; */
+        }
+        .c_top_box2{
+            width: 95%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+        .box2{
+            border: 1px solid #000;
+            width: 32%;
+            height: 200px;
+            margin-right: 2%;
+            box-sizing: border-box;
+        }
+        .box2:last-child{
+            margin-right: 0;
+        }
+        .footer{
+            text-align: center;
+            color: #fff;
+            padding: 30px 0;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_top">
+            <p class="logo">
+                Fluid
+            </p>
+        </div>
+        <div class="header_btm">
+            <ul>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="c_top">
+            <div class="c_title">
+                <p class="c_title_1">타이틀 여기다 써</p>
+                <p class="c_title_2">아티클 아티클 아티클 아티클 아티클</p>
+            </div>
+            <div class="c_top_box">
+                <div class="box1">1111</div>
+                <div class="box1">2222</div>
+            </div>
+        </div>
+        <div class="c_middle">
+            <p class="sub">서브컨텐츠</p>
+        </div>
+        <div class="c_btm">
+            <div class="c_title">
+                <p class="c_title_1">타이틀 여기다 써</p>
+                <p class="c_title_2">아티클 아티클 아티클 아티클 아티클</p>
+            </div>
+            <div class="c_top_box2">
+                <div class="box2">1111</div>
+                <div class="box2">2222</div>
+                <div class="box2">3333</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        푸터다푸터다푸터다푸터
+    </div>
+</body>
+</html>

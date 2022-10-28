@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중급 레이아웃</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li {list-style: none;}
+        a {text-decoration: none;}
+        body{
+            font-family: 'Times New Roman',Arial,sans-serif;
+            font-size: 12px;
+        }
+        /* 서체 이름에 공백이 포함될 경우 ''로 묶어 줘야 한다 */
+
+        .wrap{
+            width: 960px;
+            margin: 0 auto;
+        }
+        header{
+            width: 100%;
+            height: 80px;
+            position: relative;
+            border-bottom: 3px solid #999;
+            margin-bottom: 10px;
+            background-color: lightgray;
+        }
+        .logo{
+            position: absolute;
+            top: 17px;
+            left: 20px;
+            background-color: yellow;
+        }
+        .logo h1 {font-size: 24px;}
+        .logo h2 {font-size: 16px; font-weight: normal;}
+
+        .t_nav{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .t_nav ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .t_nav ul li {
+            text-align: center;
+            border-right: 1px solid red;
+        }
+        .t_nav ul li:last-child {
+            border-right: none;
+        }
+        /* 구조선택자 사용할 때 누구한테 설정할건지 잘 보고 선택! */
+        .t_nav ul li a {
+            display: block;
+            color: #666;
+            padding: 0 10px;
+        }
+        /* padding == a 태그에!!!! */
+        .t_nav ul li a:hover {
+            color: #fff;
+            background-color: #000;
+        }
+
+        .b_nav{
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+        }
+        .b_nav ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .b_nav ul li {
+            text-align: center;
+            border-right: 1px solid red;
+        }
+        .b_nav ul li:last-child {
+            border-right: none;
+        }
+        /* 구조선택자 사용할 때 누구한테 설정할건지 잘 보고 선택! */
+        .b_nav ul li a {
+            display: block;
+            color: #666;
+            font-size: 14px;
+            padding: 0 15px;
+        }
+        /* padding == a 태그에!!!! */
+        .b_nav ul li a:hover {
+            color: #fff;
+            background-color: #000;
+        }
+        
+        .main_img{
+            width: 958px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            border: 1px solid #ccc;
+            columns: #666;
+            font-size: 22px;
+            margin-bottom: 10px;
+            background-color: lightblue;
+        }
+        /* 
+            width값을 적지 않으면(기본100%상태일 때) border와 padding값을 100% 안에 포함 시킴. 단 margin은 포함 X 
+            == 100%이상으로 더 늘어나지 않는다.
+            width값을 적으면 over됨.
+        */
+
+        .contents{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .contents_top{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: pink;
+        }
+        .contents_top_box{
+            width: 238px;
+            height: 238px;
+            line-height: 238px;
+            text-align: center;
+            border: 1px solid #CCC;
+        }
+        .contents_btm{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: plum;
+        }
+        .contents_btm_box{
+            width: 238px;
+            height: 238px;
+            line-height: 238px;
+            text-align: center;
+            border: 1px solid #CCC;
+        }
+        .contents_btm_box:first-child{
+            width: 478px;
+        }
+
+        footer{
+            border: 1px solid #CCC;
+            padding: 10px 0;
+            text-align: center;
+            color: #666;
+            background-color: lightgoldenrodyellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <h1>Rint Development</h1>
+                <h2>Html5 + Css3 Basic</h2>
+            </div>
+            
+            <nav class="t_nav">
+                <ul>
+                    <li><a href="#">WEB</a></li>
+                    <li><a href="#">MOBILE</a></li>
+                    <li><a href="#">GAME</a></li>
+                    <li><a href="#">SIMULATION</a></li>
+                    <li><a href="#">DATA</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="b_nav">
+                <ul>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                    <li><a href="#">JQUERY</a></li>
+                    <li><a href="#">PHP</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main_img">main_img</div><!--main_img-->
+
+        <div class="contents">
+            <div class="contents_top">
+                <div class="contents_top_box">box1</div>
+                <div class="contents_top_box">box2</div>
+                <div class="contents_top_box">box3</div>
+                <div class="contents_top_box">box4</div>
+            </div>
+            <div class="contents_btm">
+                    <div class="contents_btm_box">box1</div>
+                    <div class="contents_btm_box">box2</div>
+                    <div class="contents_btm_box">box3</div>
+            </div>
+        </div><!--contents-->
+
+        <footer>
+            <p class="f_title">HTML5 + CSS3 BASIC</p>
+            <p class="f_article">WEBSITE LAYOUT BASIC</p>
+        </footer>
+    </div><!--wrap-->
+</body>
+</html>
