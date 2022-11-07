@@ -244,7 +244,7 @@ header{
 }
 .solution_img{
     width: 25%;
-    position: relative;
+    position: relative; 
 }
 .solution_img_text_top{
     position: absolute;

@@ -1,0 +1,579 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; vertical-align: top; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: 0; max-width: 100%; }
+body { font-family: 'Noto Sans KR', sans-serif; max-width: 1920px; min-width: 320px; margin: 0 auto; }
+
+/* -------------------- header start -------------------- */
+
+.header_wrap{
+    width: 100%;
+    height: 1028px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+    background: url('../images/main_img.jpg')no-repeat 50% 50%;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 171px;
+}
+.nav{
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -214px;
+    font-size: 20px;
+}
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav ul li {
+    padding: 0 35px;
+}
+.nav ul li a{
+    display: block;
+    color: #fff;
+}
+.nav ul li a:hover{
+    color: rgb(212, 212, 212);
+}
+.side{
+    position: absolute;
+    right: 96px;
+    font-size: 14px;
+}
+.side ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.side ul li {
+    padding: 0 15px;
+}
+.side ul li a {
+    display: block;
+    color: #fff;
+}
+.side ul li a:hover{
+    font-weight: 700;
+    color: #d94d1a;
+}
+
+.main{
+    margin: 0 auto 120px auto;
+}
+.main_title{
+    color: #fff;
+    font-family:'Saira Extra Condensed', sans-serif;
+    font-size:70px;
+    font-weight: 700;
+    line-height: 75%;
+    letter-spacing: -2px;
+    margin-bottom: 60px;
+}
+.main_article{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 60px;
+}
+.main_btn{
+    width: fit-content;
+    padding: 7px 65px;
+    border: 2px solid #fff;
+}
+.main_btn a {
+    display: block;
+    color: #fff;
+}
+
+
+/* -------------------- header end -------------------- */
+
+
+/* -------------------- sponsorship start -------------------- */
+
+.sponsorship{
+    width: 100%;
+    padding: 150px 0 63px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+    margin-bottom: 200px;
+}
+.spon_wrap{
+    width: 95%;
+    margin: 0 auto;
+}
+.spon_top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.spon_text_box{
+    line-height: 300%;
+}
+.spon_text_title{
+    font-size: 47px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #fff;
+}
+.spon_text_article{
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: -4px;
+    color: #fff;
+}
+.spon_right_box{
+    width: 650px;
+    height: 5px;
+    align-self: center;
+    background-color: #fff;
+}
+.spon_btm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.spon_btm_box{
+    width: 23.5%;
+    height: 250px;
+    margin-right: 2%;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #007932;
+}
+.spon_btm_box:last-child {
+    margin-right: 0;
+}
+.spon_btm_title{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+.spon_btm_article{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+.spon_p_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.plus{
+    align-self: center;
+}
+/* -------------------- sponsorship end -------------------- */
+
+/* -------------------- contents title start -------------------- */
+
+.contents_title{
+    font-size: 36px;
+    color: #000;
+    letter-spacing: -4px;
+    margin-bottom: 40px;
+}
+.contents_title span{
+    font-weight: 700;
+    color: #007932;
+}
+
+/* -------------------- contents title end -------------------- */
+
+/* -------------------- news start -------------------- */
+
+.news{
+    width: 1400px;
+    margin: 0 auto 200px auto;
+}
+.news_btm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.news_box{
+    width: 450px;
+    margin-right: 25px;
+}
+.news_box:last-child {
+    margin-right: 0;
+}
+.news_box img {
+    margin-bottom: 30px;
+}
+.news_p_wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.news_title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+
+}
+.news_title a{
+    color: #444;
+    display: block;
+}
+.news_title a:hover {
+    color: #d94d1a;
+}
+.news_article{
+    font-size: 14px;
+    color: rgb(156, 154, 154);
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+.news_date{
+    font-size: 12px;
+    color: rgb(209, 209, 209);
+}
+
+/* -------------------- news end -------------------- */
+
+/* -------------------- text start -------------------- */
+
+.text{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+.text_img{
+    width: 100%;
+    height: 523px;
+    margin: 0 auto;
+    background: url('../images/text.jpg') no-repeat 50% 50%;
+}
+
+.text_box{
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+    margin: -134px auto 0 auto;
+    background-color: #d94d1a;
+}
+.text_title{
+    font-size: 34px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -3px;
+    line-height: 130%;
+    margin-left: 50px;
+
+}
+.text_article{
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: -1px;
+    margin-right: 50px;
+}
+
+
+/* -------------------- text end -------------------- */
+
+/* -------------------- act start -------------------- */
+
+.act{
+    width: 1400px;
+    margin: 0 auto 170px auto;
+}
+.act_mid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 170px;
+}
+.act_box{
+    width: 350px;
+    height: 525px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/act.jpg') no-repeat 50% 50%;
+}
+.act p {
+    color: #fff;
+
+}
+.act_btm{
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    text-align: center;
+}
+/* -------------------- act end -------------------- */
+
+/* -------------------- media start -------------------- */
+
+/* .media{
+    width: 100%;
+    margin-bottom: 200px;
+}
+.media_top{
+    width: 100%;
+    height: 487px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #145430;
+}
+.media_text_box{
+    width: 50%;
+   
+}
+.media_text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    top: 113px;
+    left: 260px;
+}
+
+.media_pic{
+    width: 50%;
+    padding: 100px 0;
+    display: flex;
+}
+.media_pic img:first-child {
+    margin-right: 30px;
+}
+.media_pic img:last-child {
+    object-fit: cover;
+}
+
+.media_title{
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.media_article{
+    font-size: 66px;
+    font-weight: 900;
+    line-height: 85%;
+    letter-spacing: -5px;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.media_btn img{
+    padding-right: 20px;
+}
+.media_btn img:last-child{
+    padding-right: 0;
+}
+.media_btm{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #000;
+}
+.media_btm_text{
+    font-weight: 200;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    color: #fff;
+} */
+
+/* -------------------- media end -------------------- */
+
+/*  */
+
+.media { 
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
+    margin-bottom: 200px; 
+}
+.media_1400 { 
+	width: 1400px; 
+    height: 570px; 
+    margin: 0 auto; 
+    background: yellow; 
+	display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+.media_1400_top_line{ 
+	width: 100%; 
+    height: 420px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background: #145430; 
+}
+.media_1400_btm_line { 
+    overflow: hidden;
+	width: 100%; 
+    height: 150px; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    background: #000; 
+}
+
+.media_title_box { 
+    position: relative;
+    top: 75px; 
+    background: lime; 
+}
+
+.media_title{ 
+    font-size: 20px; 
+    letter-spacing: -1px; 
+    color: #fff; 
+    margin-bottom: 10px; 
+}
+.media_article{
+    font-size: 66px; 
+    font-weight: 900; 
+    line-height: 85%; 
+    letter-spacing: -5px; 
+	color: #fff; 
+    margin-bottom: 30px;
+}
+.media_btn img:first-child {
+    margin-right: 20px;
+}
+
+.media_contents_box { 
+	position: absolute; 
+    left: 50%; 
+    top: 0; 
+    background: rgba(255, 182, 182, 0.5);
+	width: 50%; 
+    height: 570px; 
+}
+.media_pic{
+    display: flex;
+    padding: 66px 0;
+    background-color: aquamarine;
+}
+.media_pic img:first-child {
+    margin-right: 30px;
+}
+
+
+/*  */
+
+/* -------------------- campaign start -------------------- */
+
+.campaign{
+    width: 1400px;
+    margin: 0 auto 200px auto;
+}
+.camp_btm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.camp_box{
+    width: 695px;
+    height: 238px;
+    background: url('../images/campaign.jpg') no-repeat 50% 50%;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.camp_box:nth-child(2n){
+    margin-right: 0;
+}
+.camp_box:nth-child(-n+2){
+    margin-bottom: 10px;
+}
+.camp_p_box{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.camp_title{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+}
+.camp_article{
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+/* -------------------- campaign end -------------------- */
+
+/* -------------------- footer start -------------------- */
+
+footer{
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+}
+.footer_wrap{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_wrap img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.footer_sns{
+    display: flex;
+    flex-wrap: wrap;
+}
+address{
+    font-size: 13px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 180%;
+}
+address span{
+    font-size: 16px;
+    font-weight: 500;
+}
+/* -------------------- footer end -------------------- */
