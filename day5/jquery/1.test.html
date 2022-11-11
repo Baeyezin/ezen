@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- <script src="jquery-3.6.1.min.js"></script> -->
+    <!-- 인터넷이 끊겨도 실행 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>jquery-1</title>
+    <!-- <script>
+        $(document).ready(function(){
+
+         $('.box1').click(function(){
+             $('.box1').hide();
+         })
+ 
+         $('.box2').click(function(){
+             $('.box2').hide();
+         })
+ 
+         $('.box3').click(function(){
+             $('.box3').hide();
+         })
+ 
+        })
+    </script> -->
+
+    <script>
+        $(document).ready(function(){
+            var box = $('.box1, .box2, .box3');
+            box.click(function(){
+                $(this).hide();
+            })
+        });
+    </script>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        .box1, .box2, .box3 {
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background-color: orangered;
+        }
+        .box2{
+            background-color: pink;
+        }
+        .box3{
+            background-color: yellowgreen;
+        }
+    </style>
+        
+    
+       <!-- $ : jquery에서 선택자 -->
+    
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

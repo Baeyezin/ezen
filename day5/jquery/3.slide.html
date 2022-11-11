@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Slide</title>
+    <!-- <script>
+        $(document).ready(function(){
+            $('.box1,.box2').hover(function(){
+                $('.box2').stop().slideToggle(1000);
+            });
+        });
+    </script> -->
+    <script>
+        $(document).ready(function(){
+            $('.box1, .box2').hover(function(){
+                $('.box2').stop().slideDown(300);
+                $('.box2').css({'background-color':'gray'});
+            },function(){
+                $('.box2').stop().slideUp(300);
+                $('.box2').css({'background-color':'pink'});
+            });
+        });
+    </script>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        .box1{
+            width: 250px;
+            height: 80px;
+            background-color: orangered;
+        }
+        .box2{
+            width: 250px;
+            height: 450px;
+            display: none;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문-5 점수구하기</title>
+</head>
+<body>
+    <script>
+        var kor =Number(prompt("국어점수는?",""));
+        var eng =Number(prompt("영어점수는?",""));
+        var mat =Number(prompt("수학점수는?",""));
+        var sci =Number(prompt("과학점수는?",""));
+
+        var total = kor+eng+mat+sci;
+        var avr = total/4;
+
+        if(avr>=90){
+            document.write("A입니다.")
+        }else if(avr>=80){
+            document.write("B입니다.")
+        }else if(avr>=70){
+            document.write("C입니다.")
+        }else if(avr>=60){
+            document.write("D입니다.")
+        }else{
+            document.write("당신이 사람입니까?")
+        }
+
+    </script>
+</body>
+</html>

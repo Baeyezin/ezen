@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kor = Number(prompt("당신의 국어 점수는?",""));
+        var eng = Number(prompt("당신의 영어 점수는?",""));
+        var mat = Number(prompt("당신의 수학 점수는?",""));
+        var sci = Number(prompt("당신의 과학 점수는?",""));
+
+        var total = kor+eng+mat+sci;
+
+        var avr = total/4;
+
+        if(avr>=90){
+            document.write("당신은 A~~~");
+        }else if(avr>=80){
+            document.write("당신은 BBBB")
+        }else if(avr>=70){
+            document.write("당신은 CC");
+        }else if(avr>=60){
+            document.write("DDDDD")
+        }else{
+            document.write("공부좀해라...")
+        }
+
+    </script>
+</body>
+</html>
