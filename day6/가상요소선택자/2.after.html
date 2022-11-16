@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>after방식</title>
+    <style>
+        *{margin: 0; padding: 0; vertical-align: top;}
+        li{list-style: none;}
+        a{text-decoration: none;}
+
+        nav ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            /* margin: 0 20px; */
+            color: #333;
+        }
+        nav ul li a:hover{
+            color: red;
+        }
+        nav ul li a::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 15px;
+            margin: 0 20px;
+            background-color: #666;
+        }
+        nav ul li:first-child a {
+            padding-left: 20px;
+        }
+        nav ul li:last-child a::after {
+            content: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">제휴제안</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

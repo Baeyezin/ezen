@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>header</title>
+    <script>
+        $(document).ready(function(){
+            $('.gnb, .nav_bg').hover(function(){
+                $('.gnb>ul>li>ul>li').stop().slideDown(200);
+                $('.nav_bg').stop().slideDown(200);
+                $('header').css({'background-color':'pink'})
+                $('.gnb_right').css({'background-position':'0 100%'})
+            },function(){
+                $('.gnb>ul>li>ul>li').stop().slideUp(200);
+                $('.nav_bg').stop().slideUp(200);
+                $('header').css({'background-color':'#000'})
+                $('.gnb_right').css({'background-position':'0 0'})
+            })
+        });
+    </script>
+    <style>
+        *{margin: 0; padding: 0;}
+        li {list-style: none;}
+        a {text-decoration: none;}
+        body {font-family: 'Times New Roman', Times, serif;}
+
+        header{
+            width: 100%;
+            height: 60px;
+            position: relative;
+            background-color: #000;
+        }
+
+        .logo{
+            width: 180px;
+            height: 40px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: orangered;
+        }
+        .gnb{
+            width: 750px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 999;
+            margin-left: -375px;
+        }
+        .gnb>ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gnb>ul>li{
+            width: 150px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+        .gnb>ul>li>a{
+            display: block;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: green;
+        }
+        .gnb>ul>li>ul>li{
+            height: 30px;
+            line-height: 30px;
+            display: none;
+        }
+        .gnb>ul>li>ul>li>a{
+            display: block;
+            color: #000;
+            font-size: 12px;
+        }
+        .gnb>ul>li>ul>li>a:hover{
+            color: orangered;
+        }
+
+        .gnb_right{
+            width: 22px;
+            height: 22px;
+            /* background-color: yellow; */
+            background: url('menu.png') no-repeat 0 0;
+            position: absolute;
+            top: 19px;
+            right: 19px;
+        }
+
+        .nav_bg{
+            width: 100%;
+            height: 350px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            z-index: 888;
+            display: none;
+            background-color: rgba(250, 239, 225, 0.5)
+        }
+
+        .main_img{
+            width: 100%;
+            height: 700px;
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div><!--logo-->
+
+        <div class="gnb">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <ul>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                    </ul>
+                </li>
+    
+    
+                <li>
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                    </ul>
+                </li>
+    
+    
+                <li>
+                    <a href="#">Service</a>
+                    <ul>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                    </ul>
+                </li>
+    
+    
+                <li>
+                    <a href="#">FAQ</a>
+                    <ul>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                    </ul>
+                </li>
+    
+    
+                <li>
+                    <a href="#">Contact Us</a>
+                    <ul>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                        <li><a href="#">test</li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--gnb-->
+
+        <div class="gnb_right"></div><!--gnb_right-->
+
+        <div class="nav_bg"></div>
+    </header><!--header-->
+
+    <div class="main_img"></div><!--main_img-->
+</body>
+</html>

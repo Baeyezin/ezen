@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>addClass</title>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('h1').addClass('blue');
+                $('h2').addClass('important');
+            })
+        })
+    </script>
+    <style>
+        *{margin: 0; padding: 0;}
+        .important{font-weight: bold;font-size: 40px;}
+        .blue{color: blue;}
+    </style>
+</head>
+<body>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <p>첫 번째 문단</p>
+    <p>두 번째 문단</p>
+    <div>DIV 테그</div>
+    <br>
+    <button>Add Class</button>
+</body>
+</html>

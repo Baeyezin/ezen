@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <title>All</title>
+    <title>Each</title>
     <script>
         $(document).ready(function(){
-            $('nav').hover(function(){
-                $('nav > ul > li > ul > li').stop().slideDown(200);
-            },function(){
-                $('nav > ul > li > ul > li').stop().slideUp(200);
+            $('nav ul li').hover(function(){
+                $(this).find('ul>li').stop().slideToggle(200);
+                // this == 현재 마우스가 올라간 개체
+                // find() == 특정 개체의 자식 개체를 찾는 메서드 (부모 개체를 찾을 순 없다!)
             });
         });
     </script>
